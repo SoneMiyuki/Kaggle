@@ -45,7 +45,47 @@ mlp_hw = MLPClassifier(solver = 'lbfgs',hidden_layer_sizes = [100,100],activatio
 ### Score:
 0.08100
 	
+## 2.0 baseline
+用MNIST训练了这个模型
+我貌似用到了原始数据集,结果这个成绩非常让人满意
+
+### Analysis
+这显然是一个分类问题.
+
+### Feature Programming
+无
+
+### Data preprocessing
+将0-255以线性变化压到0-1的浮点数
+这应该是提分的一个点
+
+### Baseline:
+
+
+### Score : 
+0.99992
+
+### 2.1 baseline
+修改成了用提供的数据集
+
+### Analysis
+这显然是一个分类问题.
+
+### Feature Programming
+无
+
+### Data preprocessing
+ - 将0-255以线性变化压到0-1的浮点数
+ - 这应该是提分的一个点
+
+### Baseline:
+
+
+### Score : 
+0.97178
 
 
 
+----
 
+代码主要参考了清华大学出版社 段小手著 深入浅出Python机器学习 神经网络章节
